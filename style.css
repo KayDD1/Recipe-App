@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ece9e6;
+  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+.mobile-container {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.15);
+}
+.header {
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+input {
+  width: 150px;
+  background-color: #e0e0e0;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-family: inherit;
+}
+.header button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+}
+
+.favorite-meal-container {
+  background-color: #eed6ed;
+  padding: 0.1rem 0.5rem;
+  text-align: center;
+}
+.favorite-meals-display ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 0.5rem;
+}
+
+.favorite-meals-display li img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.clear {
+  font-size: 0.7rem;
+  background-color: transparent;
+  color: #4d1b4b;
+  position: absolute;
+  top: 11px;
+  right: -5px;
+  border: none;
+  opacity: 0;
+  cursor: pointer;
+}
+.favorite-meals-display li:hover .clear {
+  opacity: 1;
+}
+.favorite-meals-display li {
+  display: block;
+  margin: 5px;
+  list-style-type: none;
+  position: relative;
+  cursor: pointer;
+}
+.title {
+  font-size: 10px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 50px;
+}
+.meals-container {
+  position: relative;
+}
+.meal {
+  padding: 0.65rem;
+  background-color: #ffffff;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.random-recipe {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+.random-recipe h3 {
+  background-color: white;
+  padding: 0.2rem;
+  font-size: 12px;
+}
+.meal-header img {
+  width: 280px;
+  height: 180px;
+  border-radius: 3px;
+}
+.meal-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.15);
+  width: 280px;
+  padding: 0 1rem;
+}
+.fav-btn {
+  border: none;
+  background-color: transparent;
+  color: #bdb4b4;
+  cursor: pointer;
+}
+.fav-btn:active {
+  color: #ec60e8;
+}
+
+.meal-info-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup {
+  position: relative;
+  max-width: 330px;
+  width: 100%;
+  max-height: 100vh;
+  overflow: auto;
+}
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.meal-info {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 0.1rem 1.5rem;
+  border-radius: 5px;
+}
+.meal-info img {
+  width: 280px;
+  border-radius: 5px;
+}
+.meal-info p {
+  font-size: 10px;
+}
+.meal-info li {
+  font-size: 10px;
+}
+
+.meal-info h2 {
+  text-align: center;
+  font-size: 13px;
+}
+.popup .close-popup {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
